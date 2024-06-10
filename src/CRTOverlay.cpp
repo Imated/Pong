@@ -19,8 +19,8 @@ void CRTOverlay::update(float deltaTime, SDL_Event event)
 
 void CRTOverlay::moveCRT(float deltaTime)
 {
-	crtEntity.setPos(360, crtEntity.getPos().y - 75 * deltaTime);
-	crtEntityClone.setPos(360, crtEntityClone.getPos().y - 75 * deltaTime);
+	crtEntity.setPos(360, crtEntity.getPos().y - 25 * deltaTime);
+	crtEntityClone.setPos(360, crtEntityClone.getPos().y - 25 * deltaTime);
 	if (crtEntity.getPos().y + crtEntity.getCurrentFrame().h / 2 < 0) {
 		crtEntity.setPos(360, 990);
 	}
